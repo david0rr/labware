@@ -48,5 +48,12 @@ vim setup.py
 python setup.py build
 python setup.py install --user
 cd bin
+```
+
+#### To run
+```shell
+module load gsl
+cd bin
 ./p4 # NOT installed in $PATH, can be added manually
+
 ```
