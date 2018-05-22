@@ -19,7 +19,7 @@ vagrant ssh
 Ubuntu terminal, following instructions from: http://singularity.lbl.gov/install-linux
 
 ```Shell
-sudo apt-get install libarchive-dev
+sudo apt-get install libarchive-dev squashfs-tools
 $VERSION=2.5.1
 wget https://github.com/singularityware/singularity/releases/download/$VERSION/singularity-$VERSION.tar.gz
 tar xvf singularity-$VERSION.tar.gz
