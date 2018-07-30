@@ -5,3 +5,4 @@
 - Adapter dongles?
   - VGA
   - HDMI
+- Tower fan
