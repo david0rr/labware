@@ -12,6 +12,8 @@
 
 
 
+
+
 ### Execute a file of newline separated commands as a task array
 
 ```shell
@@ -23,4 +25,23 @@ eval $CMD
 (e.g. where `cmds.txt` has 42 commands each separated by a newline)
 
 
+
+
+
+### Prevent periodic ARC3 `/nobackup` file deletion
+
+- Create a file named `.not_expire.sh ` in your **home directory**
+
+- Edit the file to contain the following:
+
+- ```shell
+  cd /nobackup/your_directory_name
+  find . -print0 | xargs -0 touch -h
+  ```
+
+- Open the crontab in the currently defined editor
+  `$ crontab -e`
+- Edit the first line to read:
+
+  `0 4 4 * * ~/.not_expire.sh`
 
