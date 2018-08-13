@@ -1,6 +1,10 @@
 # Cluster notes
 
+### Use ARC3 high memory nodes
 
+```shell
+#$ -l node_type=24core-768G
+```
 
 ### Use entire 24 core, 128GB Leeds 'Omics node for up to 48hrs
 
